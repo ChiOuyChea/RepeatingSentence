@@ -19,7 +19,7 @@ body {
 
   font-family: sans-serif;
   font-size: xx-large;
-  width: 100%;
+  width: 96.8%;
   border: 1px solid #ccc;
   padding: 30px;
   border-radius: 10px;
@@ -28,6 +28,7 @@ body {
 
 .output {
   margin-top: 10px;
+
   border: 1px solid #ccc;
   padding: 20px;
   background-color: #eee;
@@ -36,7 +37,7 @@ body {
 }
 
 button {
-  font-size: 25px;
+  font-size: 32px;
   background-color: #337ab7;
   color: white;
   border: none;
@@ -57,7 +58,7 @@ button:hover {
   text-align: center;
   background-color: #ff99c6;
   padding: 15px;
-  border-radius: 10px;
+  border-radius: 30px;
   cursor: default;
 
 }
@@ -79,6 +80,13 @@ button:hover {
   cursor: default;
 
 }
+
+.container h6 {
+
+  font-family: 'Raleway', sans-serif;
+  text-align: right;
+  margin-top: 100px;
+}
 </style>
 </head>
 <body>
@@ -90,9 +98,11 @@ button:hover {
   <h3>How many times to repeat:</h3>
   <input class="input" type="number" id="n">
   <button onclick="repeatSentence()">Repeat</button>
+  <h3>Output:</h3>
   <div class="output"></div>
   <button onclick="clearOutput()">Clear</button>
   <button onclick="copyOutput()">Copy</button>
+  <h6>By Chea Chi Ouy</h6>
 </div>
 <script>
 function repeatSentence() {
