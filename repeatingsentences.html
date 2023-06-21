@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!-- saved from url=(0066)file:///C:/Users/User/Desktop/Bard%20Google/Mobile%20Friendly.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Repeat Any Setences</title>
+<link rel="stylesheet" type="text/css" href="repeat.css" /> 
+<link rel="icon" type="image/icon.png" href="images/icon.png">
+</head>
+<body>
+
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html">Home</a>
+  <a href="tools.html">Back</a>
+  <a href="#">About</a>
+</div>
+<button class="btn">
+  <span class="icon">
+      <svg viewBox="0 0 175 80" width="40" height="40">
+          <rect width="80" height="15" fill="#f0f0f0" rx="10"></rect>
+          <rect y="30" width="80" height="15" fill="#f0f0f0" rx="10"></rect>
+          <rect y="60" width="80" height="15" fill="#f0f0f0" rx="10"></rect>
+      </svg>
+  </span>
+  <span class="text" style="font-size: 20px;cursor:pointer" onclick="openNav()"> MENU</span>
+</button>
+
+
+<div class="container fun-theme">
+  <h1>REPEAT ANY SENTENCE</h1>
+  <h3>Enter your sentence:</h3>
+  <input class="input" type="text" id="sentence">
+  <h3>How many times to repeat:</h3>
+  <input class="input" type="number" id="n"> 
+  <h4><br></h4>
+  <button class="button" onclick="repeatSentence()">
+    <p class="text">Repeat</p>
+  </button>
+  <h3>Output:</h3>
+  <div class="output"></div>
+  <button class="button" onclick="clearOutput()">
+    <p class="text">Clear</p>
+  </button>
+  <button id="copyOutput" class="button" onclick="copyOutput()">
+    <p class="text">Copy</p>
+  </button>
+  <h6>By Chea Chi Ouy</h6>
+</div>
+
+
+<script>
+function repeatSentence() {
+  var sentence = document.getElementById("sentence").value;
+  var n = document.getElementById("n").value;
+  for (var i = 1; i <= n; i++) {
+    document.querySelector(".output").innerHTML += sentence + " " + i + "<br>";
+  }
+}
+
+function clearOutput() {
+  document.querySelector(".output").innerHTML = "";
+}
+
+function copyOutput(htmlElement) {
+  if (!htmlElement) {
+      return;
+  } 
+
+    let elementText = htmlElement.innerText;
+
+    let inputElement = document.createElement('input');
+    inputElement.setAttribute('value', elementText);
+    document.body.appendChild(inputElement);
+    inputElement.select();
+    document.execCommand("copy");
+    inputElement.parentNode.removeChild(inputElement);
+}
+
+  document.querySelector('#copyOutput').onclick = function (){
+  copyOutput(document.querySelector(".output"))
+  {  
+    if (document.queryCommandSupported && document.queryCommandSupported("copy")) {
+      document.execCommand("copy");
+      // This is the new line of code that shows the message
+      alert("Copied to clipboard!");
+    }
+  }
+}
+
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+
+</script>
+</body>
+</html>

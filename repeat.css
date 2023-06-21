@@ -1,0 +1,234 @@
+body {
+  background-image: linear-gradient(to right, rgb(255, 208, 0) , rgb(0, 242, 255));
+  font-family: sans-serif;
+  font-size: xx-large;
+  display: flex;
+  justify-content: center;
+  margin-top: -30px;
+}
+
+.container {
+  max-width: 375px;
+  margin: 0 auto;
+}
+
+.input {
+  border-radius: 10px;
+  outline: 2px solid #000000;
+  border: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 150;
+  font-size: 20px;
+  background-color: #e2e2e2;
+  outline-offset: 3px;
+  padding: 10px 1rem;
+  transition: 0.25s;
+  width: 350px;
+  height: 30px;
+}
+
+.input:focus {
+  outline-offset: 5px;
+  background-color: #fff
+}
+
+.output {
+  margin-top: 10px;
+  width: 350px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  background-color: #eee;
+  border-radius: 10px;
+  outline: 2px solid #000000;
+  outline-offset: 3px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 150;
+  font-size: 20px;
+}
+
+.button {
+  justify-content: center;
+  align-items: center;
+  padding: 10px 15px;
+  margin-top: 10px;
+  height: 50px;
+  width: 100px;
+  gap: 15px;
+  background-color: #181717;
+  outline: 3px #181717 solid;
+  outline-offset: -3px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: 400ms;
+}
+
+.button .text {
+  color: white;
+  font-weight: 700;
+  font-size: 1em;
+  transition: 400ms;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 7px;
+  font-size: 16px;
+}
+
+.button svg path {
+  transition: 400ms;
+}
+
+.button:hover {
+  background-color: transparent;
+}
+
+.button:hover .text {
+  color: #181717;
+}
+
+.button:hover svg path {
+  fill: #181717;
+}
+
+.container h1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+  width: 375px;
+  margin-bottom: -5px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  font-weight: 500;
+  background-color: transparent;
+  padding: 15px;
+  font-size: 30px;
+  border-radius: 30px;
+  cursor: default;
+}
+
+.container h3 {
+  font-family: 'Raleway', sans-serif;
+  margin-bottom: 10px;
+  font-size: 25px;
+  font-weight: bold;
+  width: fit-content;
+  text-align: center;
+  background-color: transparent;
+  border-radius: 10px;
+  color: black;
+  padding: 5px;
+  border: #ccc;
+  border-color: #eee;
+  text-shadow: wheat;
+  cursor: default;
+
+}
+
+.container h6 {
+
+  font-family: 'Raleway', sans-serif;
+  text-align: right;
+  margin-bottom: 0px;
+}
+
+.container h4 {
+
+  margin-top: -80px;
+}
+
+.btn {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 150px;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  transition: all 0.5s ease-in-out;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  background: #040f16;
+  color: #f5f5f5;
+}
+
+.btn:hover {
+  box-shadow: 0 0 20px 0px #2e2e2e3a;
+}
+
+.btn .icon {
+  position: absolute;
+  height: 40px;
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+}
+
+.btn .text {
+  transform: translateX(55px);
+  margin-left: -10px;
+  margin-top: -3px;
+}
+
+.btn:hover .icon {
+  width: 175px;
+}
+
+.btn:hover .text {
+  transition: all 0.5s;
+  opacity: 0;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:active .icon {
+  transform: scale(0.85);
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
