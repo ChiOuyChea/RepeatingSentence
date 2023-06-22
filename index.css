@@ -1,7 +1,6 @@
 h1 {
   display: flex;
   justify-content: center;
-  margin-top: 0px;
 }
 
 h2 {
@@ -86,7 +85,7 @@ h2 {
 
 body  {
     background-image: url('images/indexback.jpeg');
-    background-size:cover;
+    background-size: cover;
         -webkit-animation: slidein 100s;
         animation: slidein 100s;
 
@@ -98,7 +97,9 @@ body  {
 
         -webkit-animation-direction: alternate;
         animation-direction: alternate; 
-     
+        width: 80%;
+        margin: auto;
+        overflow: hidden;
 }
 
 @-webkit-keyframes slidein {
@@ -118,7 +119,6 @@ to {background-position: -100px 0px;background-size:2750px;}
   align-items: center;
   justify-content: center;
   position: absolute;
-  margin: auto;
   top: 0;
   right: 0;
   bottom: 0;
@@ -126,11 +126,8 @@ to {background-position: -100px 0px;background-size:2750px;}
   background: rgba(75, 75, 250, 0.3);
   border-radius: 3px;
   z-index: -1;
-}
-.center h1{
-  text-align:center;
-  color:white;
-  font-family: 'Source Code Pro', monospace;
-  text-transform:uppercase;
+  margin-bottom: -90%;
+  margin-right: -40%;
+
 }
 
