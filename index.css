@@ -99,7 +99,6 @@ body  {
         animation-direction: alternate; 
         width: 80%;
         margin: auto;
-        overflow: hidden;
 }
 
 @-webkit-keyframes slidein {
