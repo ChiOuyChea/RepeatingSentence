@@ -1,29 +1,30 @@
 h1 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 32px;
+    font-size: 100px;
     font-weight: 100;
     text-align: center;
     color: aliceblue;
     margin-bottom: 30px;
-    margin-top: 50px;
+    margin-top: 175px;
 }
 
 h3 {
-    font-family: 'Raleway', sans-serif;
+    font-family: monospace;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 28px;
     justify-content: center;
     display: flex;
     color: aliceblue;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
     text-align: center;
+    margin-top: 75px;
 }
 
 button {
     background-color: white;
     color: black;
     border-radius: 10em;
-    font-size: 17px;
+    font-size: 32px;
     font-weight: 600;
     padding: 1em 2em;
     cursor: pointer;
@@ -34,12 +35,14 @@ button {
     align-items: center;
     justify-content: center;
     margin: auto;
-    width: 300px;
+    width: 600px;
+    height: 120px;
+    margin-bottom: 50px;
 }
   
   button:hover {
     transform: translateY(-4px) translateX(-2px);
-    box-shadow: 2px 5px 0 0 black;
+    box-shadow: 2px 15px 0 0 black;
   }
   
   button:active {
@@ -63,7 +66,7 @@ body  {
 
         -webkit-animation-direction: alternate;
         animation-direction: alternate;
-    width: 375px;
+    width: 80%;
     margin: auto;
     justify-content: center;
 
@@ -104,18 +107,16 @@ to {background-position: -100px 0px;background-size:2750px;}
 
 .btn {
   position: fixed;
-  top: 0;
-  left: 0;
+  top: 50px;
+  left: 50px;
   margin-top: 10px;
   margin-left: 10px;
-  width: 150px;
-  height: 50px;
+  width: 250px;
+  height: 75px;
   border-radius: 5px;
   border: none;
   transition: all 0.5s ease-in-out;
-  font-size: 20px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: 600;
   display: flex;
   align-items: center;
   background: #040f16;
