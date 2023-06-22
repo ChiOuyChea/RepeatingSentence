@@ -6,12 +6,13 @@ h1 {
 
 h2 {
   font-family: 'Raleway', sans-serif;
-  font-size: 30px;
+  font-size: 23px;
   display: flex;
   justify-content: center;
   margin-bottom: 35px;
   margin-top: 10px;
   color: azure;
+  text-align: center;
 }
 
 .primary-button {
@@ -37,8 +38,8 @@ h2 {
   margin-top: 1.5%;
   margin-left: 50%;
   transform: translate(-50%, -50%);
-  width: 300px;
-  height: 60px;
+  width: 325px;
+  height: 50px;
  }
  
  .primary-button:hover {
@@ -85,7 +86,7 @@ h2 {
 
 body  {
     background-image: url('images/indexback.jpeg');
-  background-size:cover;
+    background-size:cover;
         -webkit-animation: slidein 100s;
         animation: slidein 100s;
 
@@ -96,7 +97,8 @@ body  {
         animation-iteration-count: infinite;
 
         -webkit-animation-direction: alternate;
-        animation-direction: alternate;              
+        animation-direction: alternate; 
+     
 }
 
 @-webkit-keyframes slidein {
@@ -131,4 +133,4 @@ to {background-position: -100px 0px;background-size:2750px;}
   font-family: 'Source Code Pro', monospace;
   text-transform:uppercase;
 }
- 
+
