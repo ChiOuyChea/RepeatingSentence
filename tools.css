@@ -83,21 +83,6 @@ to {background-position: -100px 0px;background-size:2750px;}
 
 }
 
-.center
-{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  margin: auto;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: rgba(189, 75, 250, 0.3);
-  border-radius: 3px;
-  z-index: -1;
-}
 .center h1{
   text-align:center;
   color:white;
