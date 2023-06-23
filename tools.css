@@ -53,7 +53,7 @@ button {
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200');
 
 body  {
-    background-image: url('images/ambient2.jpg');
+    background-image: url('images/ambient2copy.jpg');
   background-size:cover;
         -webkit-animation: slidein 100s;
         animation: slidein 100s;
