@@ -125,5 +125,6 @@ to {background-position: -100px 0px;background-size:2750px;}
   background: rgba(75, 75, 250, 0.3);
   border-radius: 3px;
   z-index: -1;
+  margin: auto;
 }
 
