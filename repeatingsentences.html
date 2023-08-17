@@ -33,6 +33,16 @@
   <h3>How many times to repeat:</h3>
   <input class="input" type="number" id="n"> 
   <h4><br></h4>
+  <br>
+  <label for="ops" class="ops">Options: </label>
+  <select id="ops" name="ops">
+      <option value="numfirst" > Number In Front</option>
+      <option value="numlast" > Number At The End</option>
+      <option value="percent" > Number With Percentage (%)</option>
+  </select>
+
+
+  <br>
   <button class="button" onclick="repeatSentence()">
     <p class="text">Repeat</p>
   </button>
@@ -52,9 +62,36 @@
 function repeatSentence() {
   var sentence = document.getElementById("sentence").value;
   var n = document.getElementById("n").value;
-  for (var i = 1; i <= n; i++) {
-    document.querySelector(".output").innerHTML += sentence + " " + i + "<br>";
+  
+  selectElement = document.querySelector('#ops');
+  var ops = selectElement.value;
+  //var ops = document.getElementById("ops").innerHTML = selectElement.value;
+  
+  if ( ops == "numfirst")
+  {
+    for (var i = 1; i <= n; i++) {
+      document.querySelector(".output").innerHTML += i + " " + sentence + "<br>";
+    }
   }
+  else if ( ops ==  "numlast")
+  {
+    for (var i = 1; i <= n; i++) {
+      document.querySelector(".output").innerHTML += sentence + " " + i + "<br>";
+    }
+  }
+  else if ( ops == "percent" )
+  {
+    for (var i = 1; i <= n; i++) {
+      document.querySelector(".output").innerHTML += sentence + " " + i + "% <br>";
+    }
+  }
+  else
+  {
+    for (var i = 1; i <= n; i++) {
+      document.querySelector(".output").innerHTML += sentence + " " + i + "<br>";
+    }
+  }
+  
 }
 
 function clearOutput() {
@@ -88,7 +125,7 @@ function copyOutput(htmlElement) {
 }
 
 function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("mySidenav").style.width = "30%";
 }
 
 function closeNav() {
