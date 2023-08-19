@@ -39,6 +39,8 @@
       <option value="numfirst" > Number In Front</option>
       <option value="numlast" > Number At The End</option>
       <option value="percent" > Number With Percentage (%)</option>
+      <option value="nonum" > No Number</option>
+      <option value="fancy" > In And Out</option>
   </select>
 
 
@@ -60,12 +62,14 @@
 
 <script>
 function repeatSentence() {
+  document.querySelector('.output').innerHTML = " ";
   var sentence = document.getElementById("sentence").value;
   var n = document.getElementById("n").value;
   
   selectElement = document.querySelector('#ops');
   var ops = selectElement.value;
   //var ops = document.getElementById("ops").innerHTML = selectElement.value;
+  
   
   if ( ops == "numfirst")
   {
@@ -84,6 +88,38 @@ function repeatSentence() {
     for (var i = 1; i <= n; i++) {
       document.querySelector(".output").innerHTML += sentence + " " + i + "% <br>";
     }
+  }
+  else if ( ops == "nonum" )
+  {
+    for (var i = 1; i <= n; i++) {
+      document.querySelector(".output").innerHTML += sentence + "<br>";
+    }
+  }
+  else if ( ops == "fancy" )
+  {
+    var f=0;
+      do
+      { 
+        for (var i = 0; i <= 10; i++) 
+        {
+          for (var k = 0; k<=i ; k++ )
+          {
+            document.querySelector(".output").innerHTML += "&nbsp;";
+          }
+          document.querySelector(".output").innerHTML += sentence + "<br>";
+        }
+
+        for (var i = 10; i >= 0; i--)
+        {
+          for ( k = i; k>=0; k--)        
+          {
+            document.querySelector(".output").innerHTML += "&nbsp;";
+          }
+          document.querySelector(".output").innerHTML += sentence + "<br>";
+        }
+        f++;
+    }while ( f<=n/20 )
+    
   }
   else
   {
