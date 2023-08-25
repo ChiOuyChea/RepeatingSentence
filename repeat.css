@@ -264,3 +264,7 @@ h2 {
   font-size: 35px;
   font-weight: bolder;
 }
+
+textarea{
+  resize: none;
+}
