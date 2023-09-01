@@ -62,7 +62,7 @@ to {background-position: -100px 0px;background-size:2750px;}
 }
 
 .creds{
-    position: fixed;
+    position: sticky;
     bottom: 20px;
 }
 
