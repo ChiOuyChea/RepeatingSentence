@@ -1,0 +1,27 @@
+body  {
+    background-image: url('../../BACKGROUND-IMAGE/mountain.jpg');
+    background-size: cover;
+        -webkit-animation: slidein 100s;
+        animation: slidein 100s;
+
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+
+        -webkit-animation-direction: alternate;
+        animation-direction: alternate;
+
+}
+
+@-webkit-keyframes slidein {
+from {background-position: top; background-size:2500px; }
+to {background-position: -100px 0px;background-size:2250px;}
+}
+
+@keyframes slidein {
+from {background-position: top;background-size:2500px; }
+to {background-position: -100px 0px;background-size:2250px;}
+
+}
