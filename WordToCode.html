@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secret Code</title>
+    <link rel="stylesheet" type="text/css" href="secretcode.css" />
+    <link rel="icon" type="image/icon.png" href="images/icon.png">
+</head>
+<body>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="cheachiouy.html">Home</a>
+        <a href="tools.html">Back</a>
+        <a href="index.html">About</a>
+      </div>
+      <button class="btn">
+        <span class="icon">
+            <svg viewBox="0 0 175 80" width="60" height="40">
+                <rect width="100" height="25" fill="#f0f0f0" rx="10"></rect>
+                <rect y="30" width="100" height="25" fill="#f0f0f0" rx="10"></rect>
+                <rect y="60" width="100" height="25" fill="#f0f0f0" rx="10"></rect>
+            </svg>
+        </span>
+        <span class="text" style="font-size: 32px;cursor:pointer" onclick="openNav()"> MENU</span>
+      </button>
+      
+      
+      <div class="container fun-theme">
+        <h1>Secret Code</h1>
+        <h2>Want to talk in a way only you and your partners know? Try talking in CODE.</h2><br>
+        <h3>Enter your sentence:</h3>
+        <input class="input" type="text" id="sentence">
+
+        <br>
+
+        <br>
+        <button class="button" onclick="translateSentence()">
+          <p class="text">Translate</p>
+        </button>
+        <select id="ops" name="ops">
+          <option value="SentoNum" > Sentence to Numbers</option>
+          <option value="NumtoSen" > Numbers to Sentence</option>
+      </select>
+        <h3>Output:</h3>
+        <div class="output"></div>
+        <button class="button" onclick="clearOutput()">
+          <p class="text">Clear</p>
+        </button>
+        <button id="copyOutput" class="button" onclick="copyOutput()">
+          <p class="text">Copy</p>
+        </button>
+        <h6>By Chea Chi Ouy</h6>
+      </div>
+
+
+
+    <script src="wordtocode.js"></script>
+</body>
+</html>
