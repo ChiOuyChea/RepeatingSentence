@@ -11,31 +11,13 @@ function clearOutput() {
     document.querySelector(".output").innerHTML = "";
   }
   
-  function copyOutput(htmlElement) {
-    if (!htmlElement) {
-        return;
-    } 
-  
-      let elementText = htmlElement.innerText;
-  
-      let inputElement = document.createElement('input');
-      inputElement.setAttribute('value', elementText);
-      document.body.appendChild(inputElement);
-      inputElement.select();
-      document.execCommand("copy");
-      inputElement.parentNode.removeChild(inputElement);
+  function copyOutput() {
+    let textarea = document.querySelector(".output");
+    textarea.select();
+    document.execCommand("copy");
+    alert("Copied to clipboard!");
   }
   
-    document.querySelector('#copyOutput').onclick = function (){
-    copyOutput(document.querySelector(".output"))
-    {  
-      if (document.queryCommandSupported && document.queryCommandSupported("copy")) {
-        document.execCommand("copy");
-        // This is the new line of code that shows the message
-        alert("Copied to clipboard!");
-      }
-    }
-  }
 
 
   function asciiToSentence(str, len) {
