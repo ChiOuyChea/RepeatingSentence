@@ -288,3 +288,17 @@ h2 {
 textarea{
   resize: none;
 }
+
+.ms{
+  width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.message{
+  text-align: justify;
+  font-size: 15px;
+}
