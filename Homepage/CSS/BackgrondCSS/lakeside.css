@@ -16,12 +16,12 @@ body  {
 }
 
 @-webkit-keyframes slidein {
-from {background-position: top; background-size:2500px; }
-to {background-position: -100px 0px;background-size:2250px;}
+from {background-position: top; background-size:3250px; }
+to {background-position: -100px 0px;background-size:3000px;}
 }
 
 @keyframes slidein {
-from {background-position: top;background-size:2500px; }
-to {background-position: -100px 0px;background-size:2250px;}
+from {background-position: top;background-size:3250px; }
+to {background-position: -100px 0px;background-size:3000px;}
 
 }
