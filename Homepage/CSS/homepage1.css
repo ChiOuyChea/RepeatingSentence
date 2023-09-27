@@ -176,7 +176,9 @@ h1 {
     border-radius: 10px;
     border: 1;
     border-color: lightblue;
-    height: 45px;
+    height: auto;
+    padding: 10px;
+    max-width: 90%;
     /* position: relative;
     top: px; */
     cursor: pointer;
